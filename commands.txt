@@ -61,3 +61,18 @@ git push origin master
 从远程库克隆
 git clone git@github.com:AmyLingJs/gitskills.git
 
+查看分支
+git branch 
+创建分支
+git branch branchName
+切换分支
+git checkout branchName
+创建+切换
+git branch -b branchName
+合并某分支到当前分支
+git merge branchName
+删除分支
+git branch -d branchName
+
+
+

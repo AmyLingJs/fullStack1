@@ -58,3 +58,6 @@ git push -u origin master
 之后推送
 git push origin master
 
+从远程库克隆
+git clone git@github.com:AmyLingJs/gitskills.git
+

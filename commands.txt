@@ -51,5 +51,10 @@ rm "test.txt"
 git rm test.txt
 git commit -m "remove test.txt"
 
-
+连接远程库
+git remote add origin git@github.com:AmyLingJs/fullStack1.git
+第一次将本地库内容推送到远程
+git push -u origin master
+之后推送
+git push origin master
 

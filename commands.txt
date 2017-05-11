@@ -74,5 +74,11 @@ git merge branchName
 删除分支
 git branch -d branchName
 
-
-
+解决冲突
+cat readme.txt 查看内容 合并冲突部分
+git branch master
+git add readme.txt
+git commit -m "conflict fixed"
+查看分支合并情况
+git log --graph --pretty=oneline --abbrev-commit
+或者git log --graph

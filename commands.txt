@@ -1,0 +1,47 @@
+每个机器都必须自报家门：你的名字和Email地址
+git config --global user.name "AmyLingJs"
+git config --global user.email "lingjs90@163.com"
+
+创建一个版本库
+cd e:
+cd e:/heyGit
+mkdir learngit
+cd learngit
+pwd
+git init
+
+把一个文件放到新建的版本库
+git add readme.txt
+git commit -m "wrote a readme file"
+
+修改readme.txt 查看仓库当前状态
+git status
+
+查看readme.txt具体被修改内容
+git diff readme.txt
+
+修改之后提交 2步
+git add readme.txt 添加到暂存区
+git commit -m "some changes"
+
+查看修改历史记录
+git log
+或者git log --pretty=oneline
+
+回退到上一个版本
+git reset --hard HEAD^
+当前版本HEAD 上上个版本HEAD^^
+回退到某个版本
+git reset --hard commitid
+commitid可通过git reflog获取到
+
+查看文件内容
+cat readme.txt
+
+每次修改，如果不add到暂存区，那就不会加入到commit中
+
+撤销工作区修改
+git checkout -- readme.txt
+撤销暂存区修改
+先git reset HEAD readme.txt 然后git checkout -- readme.txt
+

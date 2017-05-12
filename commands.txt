@@ -95,3 +95,6 @@ git checkout -b issue-101...
 作区是干净的，刚才的工作现场存到哪去了？用git stash list命令看看
 git stash pop
 恢复的同时把stash内容也删了
+
+强制删除未合并分支
+git branch -D branchName

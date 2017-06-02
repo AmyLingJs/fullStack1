@@ -106,3 +106,8 @@ git tag -a <tagname> -m "blablabla..."可以指定标签信息；
 git tag -s <tagname> -m "blablabla..."可以用PGP签名标签；
 
 命令git tag可以查看所有标签
+
+推送本地标签到服务器:git push origin v1.0
+推送全部未推送过的本地标签到服务器:git push origin --tags
+删除本地标签:git tag -d v0.1
+删除一个远程标签:git push origin :refs/tags/v0.9
